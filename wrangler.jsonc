@@ -12,7 +12,7 @@
     {
       "binding": "DB",
       "database_name": "typing-app",
-      "database_id": "local-dev-placeholder",
+      "database_id": "ecde62b6-6626-4900-a16b-02cdf582c002",
       "migrations_dir": "./migrations"
     }
   ]
