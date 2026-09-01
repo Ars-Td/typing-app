@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>障害対応室 — 結果 (C)</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; font-family: "Hiragino Sans", "Segoe UI", sans-serif; background: #fff5f5; color: #3f1d2c; }
+    .shell { max-width: 800px; margin: 0 auto; padding: 48px 24px 80px; }
+    .mock { font-size: 12px; font-weight: 800; color: #e11d48; }
+    .card { background: #fff; border-radius: 32px; padding: 36px; box-shadow: 0 20px 50px rgba(225, 29, 72, .08); }
+    .sev { display: inline-block; background: #d1fae5; color: #047857; font-weight: 800; border-radius: 999px; padding: 4px 12px; font-size: 12px; }
+    h1 { margin: 12px 0 6px; font-size: 28px; }
+    .yen { font-size: 52px; font-weight: 900; color: #e11d48; margin: 12px 0; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 28px; }
+    .stat { background: #fff7ed; border-radius: 20px; padding: 16px; }
+    .k { font-size: 12px; font-weight: 800; color: #9f1239; }
+    .v { font-size: 24px; font-weight: 900; }
+    .cta a { text-decoration: none; margin-right: 10px; }
+    .btn { display: inline-block; padding: 12px 18px; border-radius: 16px; font-weight: 800; }
+    .pri { background: #e11d48; color: #fff; }
+    .sec { background: #ffe4e6; color: #9f1239; }
+    .screens { position: fixed; right: 16px; bottom: 16px; background: #fff; border-radius: 16px; padding: 10px 14px; font-size: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .screens a { color: #e11d48; font-weight: 700; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="mock">PATTERN C · INCIDENT BOARD</div>
+    <div class="card">
+      <span class="sev">INCIDENT MITIGATED</span>
+      <h1>今期の評価</h1>
+      <p>中級 · 2 分 · 送信 7 件</p>
+      <div class="yen">¥8,760,000</div>
+      <p>自己ベスト ¥12,480,000</p>
+      <div class="grid">
+        <div class="stat"><div class="k">入力速度</div><div class="v">62 WPM</div><div class="k">248 CPM</div></div>
+        <div class="stat"><div class="k">正確性</div><div class="v">96.4%</div></div>
+        <div class="stat"><div class="k">ミス数</div><div class="v">11</div></div>
+        <div class="stat"><div class="k">最大連続入力</div><div class="v">48</div></div>
+      </div>
+      <div class="cta">
+        <a href="play.html"><span class="btn pri">再対応</span></a>
+        <a href="home.html"><span class="btn sec">ホーム</span></a>
+        <a href="stats.html"><span class="btn sec">分析</span></a>
+      </div>
+    </div>
+  </div>
+  <nav class="screens">C:
+    <a href="home.html">ホーム</a>
+    <a href="play.html">プレイ</a>
+    <a href="result.html">結果</a>
+    <a href="stats.html">分析</a>
+    <a href="../index.html">比較</a>
+  </nav>
+</body>
+</html>

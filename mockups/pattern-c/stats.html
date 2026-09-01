@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>障害対応室 — 分析 (C)</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Hiragino Sans", "Segoe UI", sans-serif; background: #fff5f5; color: #3f1d2c; min-height: 100vh; }
+    .shell { max-width: 1000px; margin: 0 auto; padding: 40px 28px 80px; }
+    .mock { font-size: 12px; font-weight: 800; color: #e11d48; }
+    h1 { margin: 8px 0 6px; }
+    .lead { color: #9f1239; margin-bottom: 24px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    section { background: #fff; border-radius: 28px; padding: 22px; box-shadow: 0 16px 40px rgba(225, 29, 72, .07); }
+    h2 { margin: 0 0 12px; font-size: 16px; }
+    table { width: 100%; font-size: 13px; border-collapse: collapse; }
+    td { padding: 8px 0; border-top: 1px solid #ffe4e6; }
+    .bar { height: 10px; background: #ffe4e6; border-radius: 99px; margin: 6px 0 12px; }
+    .bar i { display: block; height: 100%; background: #fb7185; border-radius: 99px; }
+    a { color: #e11d48; font-weight: 800; }
+    .empty { margin-top: 20px; background: #fff; border-radius: 24px; padding: 16px 20px; color: #9f1239; }
+    .screens { position: fixed; right: 16px; bottom: 16px; background: #fff; border-radius: 16px; padding: 10px 14px; font-size: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .screens a { color: #e11d48; font-weight: 700; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="mock">PATTERN C · INCIDENT BOARD</div>
+    <h1>振り返りボード</h1>
+    <p class="lead">通算の苦手傾向。母数 20 回未満は参考。自己ベスト ¥12,480,000</p>
+    <div class="grid">
+      <section>
+        <h2>苦手キー</h2>
+        <table>
+          <tr><td>@</td><td>42</td><td>9ミス</td><td>21%</td></tr>
+          <tr><td>#</td><td>38</td><td>7ミス</td><td>18%</td></tr>
+          <tr><td>l</td><td>210</td><td>22ミス</td><td>10%</td></tr>
+        </table>
+      </section>
+      <section>
+        <h2>苦手な指</h2>
+        左小指<div class="bar"><i style="width:72%"></i></div>
+        右薬指<div class="bar"><i style="width:54%"></i></div>
+        右人差<div class="bar"><i style="width:31%"></i></div>
+      </section>
+      <section>
+        <h2>苦手な動き</h2>
+        <p>s → h　14%</p>
+        <p>. → @　18%</p>
+        <p>Shift → 3　16%</p>
+      </section>
+    </div>
+    <div class="empty">プレイが少ないときは「まだ対応ログが足りません」と空状態を出します。</div>
+    <p style="margin-top:16px"><a href="home.html">ホームへ</a></p>
+  </div>
+  <nav class="screens">C:
+    <a href="home.html">ホーム</a>
+    <a href="play.html">プレイ</a>
+    <a href="result.html">結果</a>
+    <a href="stats.html">分析</a>
+    <a href="../index.html">比較</a>
+  </nav>
+</body>
+</html>

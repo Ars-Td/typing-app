@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>返信打 UI モック比較</title>
+  <style>
+    :root { font-family: "Segoe UI", "Hiragino Sans", sans-serif; }
+    body { margin: 0; background: #f6f4ff; color: #1a1230; }
+    header { padding: 32px 40px 8px; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    p { margin: 0 0 24px; color: #5c5470; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 40px 40px; }
+    .card { background: #fff; border-radius: 16px; padding: 20px; box-shadow: 0 8px 24px rgba(80, 40, 160, .08); }
+    .card h2 { margin: 0 0 6px; font-size: 18px; }
+    .tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; margin-bottom: 10px; }
+    a { color: #5b2dff; font-weight: 600; }
+    ul { padding-left: 18px; margin: 10px 0 0; line-height: 1.7; }
+    .a .tag { background: #f3e8ff; color: #6b21a8; }
+    .b .tag { background: #fff3c4; color: #92400e; }
+    .c .tag { background: #ffe4e6; color: #9f1239; }
+    .picked { font-size: 12px; font-weight: 700; color: #16a34a; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>UI モック比較</h1>
+    <p>3パターン × 4画面。デスクトップ幅を想定しています。採用は A「Workspace Pop」。</p>
+  </header>
+  <div class="grid">
+    <article class="card a">
+      <span class="tag">A · Workspace Pop</span>
+      <span class="picked">採用</span>
+      <h2>返信打</h2>
+      <p>Slack に最も近い情報設計。年収はヘッダー右のピル。</p>
+      <ul>
+        <li><a href="pattern-a/home.html">ホーム</a></li>
+        <li><a href="pattern-a/play.html">プレイ</a></li>
+        <li><a href="pattern-a/result.html">結果</a></li>
+        <li><a href="pattern-a/stats.html">分析</a></li>
+      </ul>
+    </article>
+    <article class="card b">
+      <span class="tag">B · Salary Arcade</span>
+      <h2>年収打</h2>
+      <p>大きな年収ティッカー。送信のたびに金額が跳ねるゲーム感。</p>
+      <ul>
+        <li><a href="pattern-b/home.html">ホーム</a></li>
+        <li><a href="pattern-b/play.html">プレイ</a></li>
+        <li><a href="pattern-b/result.html">結果</a></li>
+        <li><a href="pattern-b/stats.html">分析</a></li>
+      </ul>
+    </article>
+    <article class="card c">
+      <span class="tag">C · Incident Board</span>
+      <h2>障害対応室</h2>
+      <p>トラブル多めを前面に。余白・角丸大。主人公の自己紹介あり。</p>
+      <ul>
+        <li><a href="pattern-c/home.html">ホーム</a></li>
+        <li><a href="pattern-c/play.html">プレイ</a></li>
+        <li><a href="pattern-c/result.html">結果</a></li>
+        <li><a href="pattern-c/stats.html">分析</a></li>
+      </ul>
+    </article>
+  </div>
+</body>
+</html>

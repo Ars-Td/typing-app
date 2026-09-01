@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>障害対応室 — ホーム (C)</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Hiragino Sans", "Segoe UI", sans-serif; background: #fff5f5; color: #3f1d2c; min-height: 100vh; }
+    .shell { max-width: 1040px; margin: 0 auto; padding: 40px 32px 80px; }
+    .mock { font-size: 12px; font-weight: 800; color: #e11d48; letter-spacing: .08em; }
+    .hero { display: grid; grid-template-columns: 1.3fr .9fr; gap: 28px; margin-top: 12px; }
+    .card { background: #fff; border-radius: 28px; padding: 28px; box-shadow: 0 20px 50px rgba(225, 29, 72, .08); }
+    h1 { font-size: 36px; margin: 0 0 10px; }
+    .badge { display: inline-block; background: #ffe4e6; color: #e11d48; font-weight: 800; font-size: 12px; padding: 4px 10px; border-radius: 999px; margin-bottom: 12px; }
+    .me { background: linear-gradient(160deg, #fff, #fff7ed); }
+    .avatar { width: 72px; height: 72px; border-radius: 24px; background: #fb7185; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 900; margin-bottom: 12px; }
+    .opts { display: flex; flex-direction: column; gap: 10px; margin: 18px 0; }
+    .opt { border: 2px solid #fecdd3; border-radius: 18px; padding: 14px 16px; }
+    .opt.on { border-color: #e11d48; background: #fff1f2; }
+    .opt b { display: block; }
+    .opt span { font-size: 13px; color: #9f1239; }
+    .times { display: flex; gap: 10px; }
+    .times i { flex: 1; text-align: center; font-style: normal; background: #fff; border-radius: 16px; padding: 12px; border: 2px solid #fecdd3; font-weight: 800; }
+    .times .on { background: #fb7185; color: #fff; border-color: #fb7185; }
+    .go { margin-top: 18px; display: inline-block; background: #e11d48; color: #fff; text-decoration: none; font-weight: 800; padding: 14px 28px; border-radius: 18px; }
+    .best { margin-top: 12px; font-size: 14px; color: #9f1239; }
+    .screens { position: fixed; right: 16px; bottom: 16px; background: #fff; border-radius: 16px; padding: 10px 14px; font-size: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .screens a { color: #e11d48; font-weight: 700; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="mock">PATTERN C · INCIDENT BOARD</div>
+    <div class="hero">
+      <div class="card">
+        <span class="badge">OPEN INCIDENTS 12</span>
+        <h1>障害対応室</h1>
+        <p>トラブル多めの会社。フルスタック配属のあなたが、チャットで火を消していく。</p>
+        <div class="opts">
+          <div class="opt on"><b>初級 · 新米エンジニア</b><span>短い返信。丁寧。漢字は控えめ〜好きが出る。</span></div>
+          <div class="opt"><b>中級 · 慣れてきたエンジニア</b><span>メンション、Issue / PR、Markdown。</span></div>
+          <div class="opt"><b>上級 · つよつよエンジニア</b><span>複数行・引用・絶対的自信。</span></div>
+        </div>
+        <div class="times"><i>1分</i><i class="on">2分</i><i>3分</i></div>
+        <a class="go" href="play.html">対応を開始する</a>
+        <div class="best">自己ベスト年収 ¥12,480,000　·　<a href="stats.html" style="color:#e11d48;font-weight:800">分析</a></div>
+      </div>
+      <div class="card me">
+        <div class="avatar">漢</div>
+        <h2 style="margin:0 0 8px">あなた</h2>
+        <p style="margin:0;line-height:1.7">フルスタック。漢字が大好き。言えば言うほどカッコいいと思っている。文章作りには絶対の自信がある。</p>
+        <p style="margin:16px 0 0;font-size:13px;color:#be123c">今日のチャンネル: #incidents / #pr-review / #customer-success</p>
+      </div>
+    </div>
+  </div>
+  <nav class="screens">C:
+    <a href="home.html">ホーム</a>
+    <a href="play.html">プレイ</a>
+    <a href="result.html">結果</a>
+    <a href="stats.html">分析</a>
+    <a href="../index.html">比較</a>
+  </nav>
+</body>
+</html>

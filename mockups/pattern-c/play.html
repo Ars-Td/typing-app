@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>障害対応室 — プレイ (C)</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; height: 100vh; display: flex; font-family: "Hiragino Sans", "Segoe UI", sans-serif; background: #fff; color: #3f1d2c; }
+    .side { width: 240px; background: #fff1f2; padding: 20px 16px; border-right: 1px solid #fecdd3; }
+    .logo { font-weight: 900; font-size: 18px; margin-bottom: 18px; }
+    .ch { padding: 10px 12px; border-radius: 16px; margin-bottom: 6px; font-weight: 700; }
+    .ch.on { background: #fb7185; color: #fff; }
+    .pill { font-size: 11px; background: #e11d48; color: #fff; border-radius: 999px; padding: 2px 7px; margin-left: 6px; }
+    .col { flex: 1; display: flex; flex-direction: column; }
+    header { padding: 16px 28px; display: flex; justify-content: space-between; align-items: center; }
+    .sev { background: #ffe4e6; color: #e11d48; font-weight: 800; border-radius: 999px; padding: 6px 12px; font-size: 13px; }
+    .hud { display: flex; gap: 10px; }
+    .hud span { background: #fff7ed; border-radius: 999px; padding: 6px 14px; font-weight: 800; }
+    .feed { flex: 1; padding: 8px 36px 20px; overflow: auto; }
+    .msg { display: flex; gap: 14px; margin-bottom: 20px; }
+    .av { width: 44px; height: 44px; border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; }
+    .name { font-weight: 800; }
+    .name em { font-style: normal; color: #fb7185; font-size: 12px; margin-left: 8px; }
+    .bubble { margin-top: 6px; background: #fff; border-radius: 20px; padding: 12px 16px; box-shadow: 0 8px 24px rgba(244, 63, 94, .08); line-height: 1.65; }
+    .react { margin-top: 6px; font-size: 13px; }
+    .react u { text-decoration: none; background: #fff1f2; border-radius: 999px; padding: 2px 8px; margin-right: 4px; }
+    .composer { margin: 0 28px 24px; background: #fff7ed; border-radius: 24px; padding: 18px 20px; }
+    .jp { font-size: 18px; margin-bottom: 8px; }
+    .ok { color: #16a34a; }
+    .cur { background: #fecdd3; border-radius: 6px; }
+    .wait { color: #d6d3d1; }
+    .roma { font-family: ui-monospace, monospace; color: #9f1239; }
+    .roma .bad { color: #e11d48; }
+    .foot { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
+    .send { background: #e11d48; color: #fff; border: 0; border-radius: 14px; padding: 10px 18px; font-weight: 800; opacity: .4; }
+    .screens { position: fixed; right: 16px; bottom: 16px; background: #fff; border-radius: 16px; padding: 10px 14px; font-size: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .screens a { color: #e11d48; font-weight: 700; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <aside class="side">
+    <div class="logo">障害対応室</div>
+    <div class="ch"># general</div>
+    <div class="ch on"># incidents <span class="pill">P1</span></div>
+    <div class="ch"># pr-review</div>
+    <div class="ch"># customer-success</div>
+  </aside>
+  <div class="col">
+    <header>
+      <div>
+        <div class="sev">SEV-2 · ログイン間欠障害</div>
+        <div style="font-size:13px;margin-top:4px;color:#9f1239">中級 · 慣れてきたエンジニア</div>
+      </div>
+      <div class="hud">
+        <span>残り 1:24</span>
+        <span>年収 ¥3,240,000</span>
+      </div>
+    </header>
+    <div class="feed">
+      <div class="msg">
+        <div class="av" style="background:#38bdf8">佐</div>
+        <div>
+          <div class="name">佐藤（PM） <em>10:02</em></div>
+          <div class="bubble">@you PR #123 のレビューお願いできますか？本番のログインがたまに落ちてて、今日中に見てもらえると助かります。</div>
+          <div class="react"><u>🔥 3</u><u>👀 2</u></div>
+        </div>
+      </div>
+      <div class="msg">
+        <div class="av" style="background:#a78bfa">田</div>
+        <div>
+          <div class="name">田中（SRE） <em>10:03</em></div>
+          <div class="bubble">再現手順は Issue #88。`5xx` がバーストしてる。</div>
+        </div>
+      </div>
+    </div>
+    <div class="composer">
+      <div style="font-size:12px;font-weight:800;color:#e11d48;margin-bottom:6px">REPLY · ローマ字で入力</div>
+      <div class="jp"><span class="ok">確認します。</span><span class="cur">少</span><span class="wait">々お待ちください。</span></div>
+      <div class="roma">kakuninsimasu.<span class="bad">s</span></div>
+      <div class="foot">
+        <span style="font-size:13px">ミス 1 · 漢字で決める</span>
+        <button class="send">送信</button>
+      </div>
+    </div>
+  </div>
+  <nav class="screens">C:
+    <a href="home.html">ホーム</a>
+    <a href="play.html">プレイ</a>
+    <a href="result.html">結果</a>
+    <a href="stats.html">分析</a>
+    <a href="../index.html">比較</a>
+  </nav>
+</body>
+</html>

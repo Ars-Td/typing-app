@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>返信打 — プレイ (A)</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", "Hiragino Sans", sans-serif; display: flex; height: 100vh; background: #fff; color: #1e293b; }
+    .side { width: 220px; background: #3f0e40; color: #fce7f3; padding: 14px 10px; }
+    .logo { font-weight: 800; font-size: 18px; padding: 8px 10px 16px; color: #fff; }
+    .logo span { color: #84cc16; }
+    .sec { font-size: 11px; color: #f9a8d4; padding: 8px 10px; letter-spacing: .06em; }
+    .ch { padding: 6px 10px; border-radius: 6px; font-size: 13px; color: #fbcfe8; }
+    .ch.on { background: #5b1d5c; color: #fff; }
+    .col { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+    header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding: 10px 20px; }
+    header h1 { margin: 0; font-size: 16px; }
+    .pills { display: flex; gap: 8px; }
+    .pill { border-radius: 999px; padding: 4px 12px; font-size: 13px; font-weight: 700; }
+    .pill.pay { background: #fce7f3; color: #db2777; }
+    .pill.time { background: #ecfeff; color: #0e7490; }
+    .msgs { flex: 1; overflow: auto; padding: 20px 28px; }
+    .msg { display: flex; gap: 12px; margin-bottom: 16px; }
+    .av { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #fff; font-size: 13px; flex-shrink: 0; }
+    .who { font-weight: 700; font-size: 14px; }
+    .who span { font-weight: 400; color: #94a3b8; font-size: 12px; margin-left: 8px; }
+    .body { margin: 4px 0 0; line-height: 1.6; }
+    .you { background: #f8fafc; border-radius: 10px; padding: 10px 12px; border: 1px dashed #cbd5e1; color: #64748b; }
+    .composer { border-top: 1px solid #e2e8f0; padding: 14px 20px 18px; }
+    .box { border: 2px solid #e2e8f0; border-radius: 10px; padding: 12px 14px; }
+    .hint { font-size: 11px; color: #94a3b8; margin-bottom: 6px; }
+    .jp { font-size: 16px; line-height: 1.8; margin-bottom: 8px; }
+    .ok { color: #16a34a; }
+    .cur { background: #fce7f3; border-radius: 3px; }
+    .wait { color: #94a3b8; }
+    .roma { font-family: ui-monospace, monospace; font-size: 14px; background: #f1f5f9; border-radius: 6px; padding: 8px 10px; }
+    .roma .ok { color: #7c3aed; }
+    .roma .bad { color: #e11d48; text-decoration: underline; }
+    .bar { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+    .send { background: #ec4899; color: #fff; border: 0; border-radius: 8px; padding: 8px 16px; font-weight: 700; opacity: .45; }
+    .screens { position: fixed; right: 16px; bottom: 16px; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px 12px; font-size: 12px; }
+    .screens a { color: #7c3aed; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <aside class="side">
+    <div class="logo">返信<span>打</span></div>
+    <div class="sec">CHANNELS</div>
+    <div class="ch"># general</div>
+    <div class="ch"># incidents</div>
+    <div class="ch on"># pr-review</div>
+    <div class="ch"># customer-success</div>
+  </aside>
+  <div class="col">
+    <header>
+      <h1># pr-review · 中級 · 慣れてきたエンジニア</h1>
+      <div class="pills">
+        <span class="pill time">残り 1:24</span>
+        <span class="pill pay">年収 ¥3,240,000</span>
+      </div>
+    </header>
+    <div class="msgs">
+      <div class="msg">
+        <div class="av" style="background:#22d3ee">佐</div>
+        <div>
+          <div class="who">佐藤（PM） <span>10:02</span></div>
+          <div class="body">@you PR #123 のレビューお願いできますか？本番のログインがたまに落ちてて、今日中に見てもらえると助かります。</div>
+        </div>
+      </div>
+      <div class="msg">
+        <div class="av" style="background:#a855f7">田</div>
+        <div>
+          <div class="who">田中（SRE） <span>10:03</span></div>
+          <div class="body">再現手順は Issue #88 に貼った。`5xx` がバーストしてる。</div>
+        </div>
+      </div>
+      <div class="msg">
+        <div class="av" style="background:#84cc16">己</div>
+        <div>
+          <div class="who">あなた <span>入力中</span></div>
+          <div class="you">確認します。少々お待ちください。 → 送信前</div>
+        </div>
+      </div>
+    </div>
+    <div class="composer">
+      <div class="box">
+        <div class="hint">お手本（日本語） · ローマ字で入力</div>
+        <div class="jp">
+          <span class="ok">確認します。</span><span class="cur">少</span><span class="wait">々お待ちください。</span>
+        </div>
+        <div class="roma">
+          <span class="ok">kakuninsimasu.</span><span class="bad">s</span>
+        </div>
+        <div class="bar">
+          <span style="font-size:12px;color:#64748b">ミス 1 · コンボ 12</span>
+          <button class="send">送信（未完了）</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="screens">A:
+    <a href="home.html">ホーム</a>
+    <a href="play.html">プレイ</a>
+    <a href="result.html">結果</a>
+    <a href="stats.html">分析</a>
+    <a href="../index.html">比較</a>
+  </nav>
+</body>
+</html>

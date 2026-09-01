@@ -1,0 +1,368 @@
+[
+  {
+    "id": "b01",
+    "difficulty": "beginner",
+    "channel": "#general",
+    "incoming": [{"name": "佐藤（PM）", "body": "今日の朝会、始まります。進捗だけ一言ください。"}],
+    "reply": "了解です。今から参加します。",
+    "yomi": "りょうかいです。いまからさんかします。",
+    "baseReward": 90000
+  },
+  {
+    "id": "b02",
+    "difficulty": "beginner",
+    "channel": "#pr-review",
+    "incoming": [{"name": "高橋（先輩）", "body": "PR 見てもらえる？急がなくて大丈夫です。"}],
+    "reply": "確認します。少々お待ちください。",
+    "yomi": "かくにんします。しょうしょうおまちください。",
+    "baseReward": 110000
+  },
+  {
+    "id": "b03",
+    "difficulty": "beginner",
+    "channel": "#incidents",
+    "incoming": [{"name": "田中（SRE）", "body": "ステージングでログインできない、って声あります。"}],
+    "reply": "承知しました。原因を調べます。",
+    "yomi": "しょうちしました。げんいんをしらべます。",
+    "baseReward": 120000
+  },
+  {
+    "id": "b04",
+    "difficulty": "beginner",
+    "channel": "#customer-success",
+    "incoming": [{"name": "小林（CS）", "body": "お客様から、画面が白いと連絡が来ました。"}],
+    "reply": "ありがとうございます。再現を試みます。",
+    "yomi": "ありがとうございます。さいげんをこころみます。",
+    "baseReward": 130000
+  },
+  {
+    "id": "b05",
+    "difficulty": "beginner",
+    "channel": "#general",
+    "incoming": [{"name": "佐藤（PM）", "body": "リリースノート、今日中に下書きありますか？"}],
+    "reply": "作成します。午後に共有します。",
+    "yomi": "さくせいします。ごごにきょうゆうします。",
+    "baseReward": 100000
+  },
+  {
+    "id": "b06",
+    "difficulty": "beginner",
+    "channel": "#pr-review",
+    "incoming": [{"name": "伊藤（QA）", "body": "テスト環境のアカウント、まだ使えますか？"}],
+    "reply": "使えます。必要なら権限を追加します。",
+    "yomi": "つかえます。ひつようならけんげんをついかします。",
+    "baseReward": 140000
+  },
+  {
+    "id": "b07",
+    "difficulty": "beginner",
+    "channel": "#incidents",
+    "incoming": [{"name": "田中（SRE）", "body": "デプロイ、少し遅れそうです。待ってもらえますか？"}],
+    "reply": "大丈夫です。準備して待ちます。",
+    "yomi": "だいじょうぶです。じゅんびしてまちます。",
+    "baseReward": 95000
+  },
+  {
+    "id": "b08",
+    "difficulty": "beginner",
+    "channel": "#general",
+    "incoming": [{"name": "高橋（先輩）", "body": "昼休み、何時に戻る予定？"}],
+    "reply": "十三時には戻ります。",
+    "yomi": "じゅうさんじにはもどります。",
+    "baseReward": 80000
+  },
+  {
+    "id": "b09",
+    "difficulty": "beginner",
+    "channel": "#pr-review",
+    "incoming": [{"name": "山田（デザ）", "body": "ボタンの文言、まだ仮です。あとで差し替えます。"}],
+    "reply": "了解です。仮のままで進めます。",
+    "yomi": "りょうかいです。かりのままですすめます。",
+    "baseReward": 100000
+  },
+  {
+    "id": "b10",
+    "difficulty": "beginner",
+    "channel": "#customer-success",
+    "incoming": [{"name": "小林（CS）", "body": "問い合わせ番号 42 の件、担当お願いできますか。"}],
+    "reply": "担当します。状況を整理します。",
+    "yomi": "たんとうします。じょうきょうをせいりします。",
+    "baseReward": 150000
+  },
+  {
+    "id": "b11",
+    "difficulty": "beginner",
+    "channel": "#incidents",
+    "incoming": [{"name": "田中（SRE）", "body": "ログ、見ました？エラー出てます。"}],
+    "reply": "見ました。続きを追います。",
+    "yomi": "みました。つづきをおいます。",
+    "baseReward": 110000
+  },
+  {
+    "id": "b12",
+    "difficulty": "beginner",
+    "channel": "#general",
+    "incoming": [{"name": "佐藤（PM）", "body": "明日のデモ、資料は最新版でお願いします。"}],
+    "reply": "最新版に更新しておきます。",
+    "yomi": "さいしんばんにこうしんしておきます。",
+    "baseReward": 160000
+  },
+  {
+    "id": "b13",
+    "difficulty": "beginner",
+    "channel": "#pr-review",
+    "incoming": [{"name": "高橋（先輩）", "body": "コメント返したらマージして大丈夫です。"}],
+    "reply": "修正しました。マージします。",
+    "yomi": "しゅうせいしました。まあじします。",
+    "baseReward": 170000
+  },
+  {
+    "id": "i01",
+    "difficulty": "intermediate",
+    "channel": "#pr-review",
+    "incoming": [
+      {"name": "佐藤（PM）", "body": "@you PR #123 のレビューお願いできますか？本番のログインがたまに落ちます。"},
+      {"name": "田中（SRE）", "body": "再現手順は Issue #88 に貼った。`5xx` がバーストしてる。"}
+    ],
+    "reply": "確認します。Issue #88 を起点に、認証まわりを優先して追います。",
+    "yomi": "かくにんします。Issue #88 をきてんに、にんしょうまわりをゆうせんしておいます。",
+    "baseReward": 280000
+  },
+  {
+    "id": "i02",
+    "difficulty": "intermediate",
+    "channel": "#incidents",
+    "incoming": [{"name": "田中（SRE）", "body": "ステージングの CPU が跳ねてます。直近のデプロイ、怪しくないですか。"}],
+    "reply": "直近のデプロイを切り戻す案も用意します。メトリクスを先に見ます。",
+    "yomi": "ちょっきんのでぷろいをきりもどすあんもよういします。めとりくすをさきにみます。",
+    "baseReward": 320000
+  },
+  {
+    "id": "i03",
+    "difficulty": "intermediate",
+    "channel": "#customer-success",
+    "incoming": [{"name": "小林（CS）", "body": "顧客の山田様から、請求画面が遅いと。今日中に一次回答ほしいです。"}],
+    "reply": "一次回答を起草します。原因仮説はキャッシュ枯渇です。",
+    "yomi": "いちじかいとうをきそうします。げんいんかせつはきゃっしゅこかつです。",
+    "baseReward": 300000
+  },
+  {
+    "id": "i04",
+    "difficulty": "intermediate",
+    "channel": "#general",
+    "incoming": [{"name": "佐藤（PM）", "body": "スプリントゴール、まだ危ないです。Issue #15 だけでも閉じたい。"}],
+    "reply": "Issue #15 は今夜までに閉じます。範囲は最小に絞ります。",
+    "yomi": "Issue #15 はこんやまでにとじます。はんいはさいしょうにしぼります。",
+    "baseReward": 260000
+  },
+  {
+    "id": "i05",
+    "difficulty": "intermediate",
+    "channel": "#pr-review",
+    "incoming": [{"name": "高橋（先輩）", "body": "型エラー、CI で落ちてる。`tsc` 通してからで。"}],
+    "reply": "`tsc` を通しました。型の曖昧さを排除したので再実行お願いします。",
+    "yomi": "`tsc` をとおしました。かたのあいまいさをはいじょしたのでさいじっこうおねがいします。",
+    "baseReward": 340000
+  },
+  {
+    "id": "i06",
+    "difficulty": "intermediate",
+    "channel": "#incidents",
+    "incoming": [{"name": "伊藤（QA）", "body": "決済のサンドボックス、タイムアウトします。再現率は半々くらい。"}],
+    "reply": "再現手順を固定します。タイムアウト値の妥当性から検証します。",
+    "yomi": "さいげんてじゅんをこていします。たいむあうとちのだとうせいからけんしょうします。",
+    "baseReward": 310000
+  },
+  {
+    "id": "i07",
+    "difficulty": "intermediate",
+    "channel": "#pr-review",
+    "incoming": [{"name": "山田（デザ）", "body": "空状態のコピー、まだ弱いです。もう少し安心感ほしい。"}],
+    "reply": "空状態の文言を再構成します。不安を煽らず、次の操作を明示します。",
+    "yomi": "からじょうたいのぶんごんをさいこうせいします。ふあんをあおらず、つぎのそうさをめいじします。",
+    "baseReward": 290000
+  },
+  {
+    "id": "i08",
+    "difficulty": "intermediate",
+    "channel": "#general",
+    "incoming": [{"name": "佐藤（PM）", "body": "@you 明日の顧客定例、技術側の説明お願いできますか。"}],
+    "reply": "引き受けます。障害の経緯と再発防止を、簡潔に説明します。",
+    "yomi": "ひきうけます。しょうがいのけいいとさいはつぼうしを、かんけつにせつめいします。",
+    "baseReward": 270000
+  },
+  {
+    "id": "i09",
+    "difficulty": "intermediate",
+    "channel": "#incidents",
+    "incoming": [
+      {"name": "田中（SRE）", "body": "Alert が鳴り止みません。"},
+      {"name": "高橋（先輩）", "body": "閾値、先週緩めたばかりなんだけど。"}
+    ],
+    "reply": "閾値は戻さず、ノイズ源を切り分けます。誤検知なら抑制ルールを足します。",
+    "yomi": "いきちはもどさず、のいずげんをきりわけます。ごけんちならよくせいるーるをたします。",
+    "baseReward": 360000
+  },
+  {
+    "id": "i10",
+    "difficulty": "intermediate",
+    "channel": "#customer-success",
+    "incoming": [{"name": "小林（CS）", "body": "CSV 出力が文字化けする、とのこと。Excel で開いてるっぽいです。"}],
+    "reply": "BOM 付き UTF-8 に揃えます。手順もドキュメントへ追記します。",
+    "yomi": "BOM つき UTF-8 にそろえます。てじゅんもどきゅめんとへついきします。",
+    "baseReward": 330000
+  },
+  {
+    "id": "i11",
+    "difficulty": "intermediate",
+    "channel": "#pr-review",
+    "incoming": [{"name": "高橋（先輩）", "body": "N+1、また混入してない？ダッシュボードが重い。"}],
+    "reply": "クエリを集約しました。N+1 は潰したので、再計測をお願いします。",
+    "yomi": "くえりをしゅうやくしました。N+1 はつぶしたので、さいけいそくをおねがいします。",
+    "baseReward": 350000
+  },
+  {
+    "id": "i12",
+    "difficulty": "intermediate",
+    "channel": "#general",
+    "incoming": [{"name": "佐藤（PM）", "body": "金曜リリース、まだ黄色です。フィーチャーフラグで守れる？"}],
+    "reply": "フラグで隔離します。本番直撃は避け、段階的に有効化します。",
+    "yomi": "ふらぐでかくりします。ほんばんちょくげきはさけ、だんかいてきにゆうこうかします。",
+    "baseReward": 300000
+  },
+  {
+    "id": "i13",
+    "difficulty": "intermediate",
+    "channel": "#incidents",
+    "incoming": [{"name": "田中（SRE）", "body": "証明書の期限、来週です。更新手順、誰か持ってます？"}],
+    "reply": "手順は把握しています。更新枠を確保して、巻きで進めます。",
+    "yomi": "てじゅんははあくしています。こうしんわくをかくほして、まきですすめます。",
+    "baseReward": 250000
+  },
+  {
+    "id": "a01",
+    "difficulty": "advanced",
+    "channel": "#incidents",
+    "incoming": [
+      {"name": "田中（SRE）", "body": "本番 5xx が連続。DB の接続数が上限に張り付いてます。"},
+      {"name": "佐藤（PM）", "body": "顧客影響の一次情報、今すぐほしい。"}
+    ],
+    "reply": "接続プールを即時縮退し、影響範囲を限定する。\n原因は長寿命コネクションの漏洩と断定する。",
+    "yomi": "せつぞくぷーるをそくじしゅくたいし、えいきょうはんいをげんていする。\nげんいんはちょうじゅみょうこねくしょんのろうえいとだんていする。",
+    "baseReward": 720000
+  },
+  {
+    "id": "a02",
+    "difficulty": "advanced",
+    "channel": "#pr-review",
+    "incoming": [{"name": "高橋（先輩）", "body": "この PR、抽象が勝ちすぎ。後から読めない。"}],
+    "reply": "過剰な抽象を解体し、手続きを露出させる。\n可読性を、拡張性より優先する。",
+    "yomi": "かじょうなちゅうしょうをかいたいし、てつづきをろしゅつさせる。\nかどくせいを、かくちょうせいよりゆうせんする。",
+    "baseReward": 680000
+  },
+  {
+    "id": "a03",
+    "difficulty": "advanced",
+    "channel": "#customer-success",
+    "incoming": [{"name": "小林（CS）", "body": "重要顧客が「データ消えた」と。バックアップは生きてる？"}],
+    "reply": "消失ではない。フィルタ条件の誤適用だ。\n復元手順は不要。画面上の条件をリセットすれば足りる。",
+    "yomi": "しょうしつではない。ふぃるたじょうけんのごてきようだ。\nふくげんてじゅんはふよう。がめんじょうのじょうけんをりせっとすればたりる。",
+    "baseReward": 700000
+  },
+  {
+    "id": "a04",
+    "difficulty": "advanced",
+    "channel": "#general",
+    "incoming": [{"name": "佐藤（PM）", "body": "経営から、障害の再発防止を一文で、と。難しいのは分かってる。"}],
+    "reply": "監視の盲点を塞ぎ、デプロイを小さく分割する。それが再発防止の本体だ。",
+    "yomi": "かんしのもうてんをふさぎ、でぷろいをちいさくぶんかつする。それがさいはつぼうしのほんたいだ。",
+    "baseReward": 640000
+  },
+  {
+    "id": "a05",
+    "difficulty": "advanced",
+    "channel": "#pr-review",
+    "incoming": [
+      {"name": "伊藤（QA）", "body": "フラキーな E2E が 3 本残ってます。"},
+      {"name": "高橋（先輩）", "body": "時間ないならスキップでいいよ、とまでは言わないけど。"}
+    ],
+    "reply": "スキップは敗北だ。待機を明示し、競合を潰す。\n`retry` に逃げず、原因を固定する。",
+    "yomi": "すきっぷははいぼくだ。たいきをめいじし、きょうごうをつぶす。\n`retry` ににげず、げんいんをこていする。",
+    "baseReward": 760000
+  },
+  {
+    "id": "a06",
+    "difficulty": "advanced",
+    "channel": "#incidents",
+    "incoming": [{"name": "田中（SRE）", "body": "キャッシュの stampede、また来た。TTL 揃いすぎ。"}],
+    "reply": "TTL に揺らぎを入れ、単一瞬間の再生成を禁ずる。\nこれが根本対応だ。",
+    "yomi": "TTL にゆらぎをいれ、たんいつしゅんかんのさいせいせいをきんずる。\nこれがこんぽんたいおうだ。",
+    "baseReward": 740000
+  },
+  {
+    "id": "a07",
+    "difficulty": "advanced",
+    "channel": "#pr-review",
+    "incoming": [{"name": "山田（デザ）", "body": "エラー文言が全部「失敗しました」。これじゃ次の手が分からない。"}],
+    "reply": "失敗の種別を分け、次手を一文で示す。\n曖昧な謝罪は、信頼を削るだけだ。",
+    "yomi": "しっぱいのしゅべつをわけ、つぎてをいちぶんでしめす。\nあいまいなしゃざいは、しんらいをけずるだけだ。",
+    "baseReward": 660000
+  },
+  {
+    "id": "a08",
+    "difficulty": "advanced",
+    "channel": "#general",
+    "incoming": [{"name": "佐藤（PM）", "body": "見積もり倍増の理由、技術側から説明して。"}],
+    "reply": "未知の結合試験が本体だ。実装そのものではない。\n見積もりの増加は、リスクの可視化である。",
+    "yomi": "みちのけつごうしけんがほんたいだ。じっそうそのものではない。\nみつもりのぞうかは、りすくのかしかである。",
+    "baseReward": 690000
+  },
+  {
+    "id": "a09",
+    "difficulty": "advanced",
+    "channel": "#incidents",
+    "incoming": [{"name": "田中（SRE）", "body": "カナリア 5% で既に悪化。全開は論外だよね。"}],
+    "reply": "即時ロールバックする。仮説が崩れた以上、前進に意味はない。",
+    "yomi": "そくじろおるばっくする。かせつがくずれたいじょう、ぜんしんにいみはない。",
+    "baseReward": 620000
+  },
+  {
+    "id": "a10",
+    "difficulty": "advanced",
+    "channel": "#customer-success",
+    "incoming": [{"name": "小林（CS）", "body": "SLA 違反になりそう。公式コメント草案、技術視点でお願い。"}],
+    "reply": "影響は検索の遅延に限定され、更新系は健全である。\n復旧見込みは 30 分、再発防止は接続制限の見直しだ。",
+    "yomi": "えいきょうはけんさくのちえんにげんていされ、こうしんけいはけんぜんである。\nふっきゅうみこみは 30 ふん、さいはつぼうしはせつぞくせいげんのみなおしだ。",
+    "baseReward": 800000
+  },
+  {
+    "id": "a11",
+    "difficulty": "advanced",
+    "channel": "#pr-review",
+    "incoming": [{"name": "高橋（先輩）", "body": "`any` が残ってる。時間ないのは分かる。それでも。"}],
+    "reply": "`any` は負債の宣言だ。境界に型を置き、内部の曖昧さを閉じる。",
+    "yomi": "`any` はふさいのせんげんだ。きょうかいにかたをおき、ないぶのあいまいさをとじる。",
+    "baseReward": 650000
+  },
+  {
+    "id": "a12",
+    "difficulty": "advanced",
+    "channel": "#incidents",
+    "incoming": [
+      {"name": "伊藤（QA）", "body": "本番相当データでしか落ちないバグです。"},
+      {"name": "佐藤（PM）", "body": "マスキング環境、まだ使えないんだっけ。"}
+    ],
+    "reply": "本番相当の部分集合で再現する。全量コピーは不要だ。\n機微は落とし、分布だけ残す。",
+    "yomi": "ほんばんそうとうのぶぶんしゅうごうでさいげんする。ぜんりょうこぴーはふようだ。\nきびはおとし、ぶんぷだけのこす。",
+    "baseReward": 780000
+  },
+  {
+    "id": "a13",
+    "difficulty": "advanced",
+    "channel": "#general",
+    "incoming": [{"name": "高橋（先輩）", "body": "オンコール今夜、引継ぎポイントだけ。"}],
+    "reply": "既知の障害は接続枯渇。症状は 5xx の偏り。\n手順は縮退、観察、必要ならロールバック。以上だ。",
+    "yomi": "きちのしょうがいはせつぞくこかつ。しょうじょうは 5xx のかたより。\nてじゅんはしゅくたい、かんさつ、ひつようならろおるばっく。いじょうだ。",
+    "baseReward": 710000
+  }
+]

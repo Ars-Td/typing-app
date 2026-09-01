@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+*.local
+.direnv/
+.vite/
+.vite-hooks/
+.DS_Store
+coverage/
+worker-configuration.d.ts
+.vp/

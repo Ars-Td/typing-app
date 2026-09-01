@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>返信打 — 結果 (A)</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", "Hiragino Sans", sans-serif; display: flex; min-height: 100vh; background: #f8fafc; color: #1e293b; }
+    .side { width: 220px; background: #3f0e40; color: #fce7f3; padding: 14px 10px; }
+    .logo { font-weight: 800; font-size: 18px; padding: 8px 10px 16px; color: #fff; }
+    .logo span { color: #84cc16; }
+    .ch { padding: 6px 10px; border-radius: 6px; font-size: 13px; color: #fbcfe8; }
+    .ch.on { background: #5b1d5c; color: #fff; }
+    .main { flex: 1; padding: 48px 56px; }
+    .mock { font-size: 12px; font-weight: 700; color: #db2777; }
+    h1 { margin: 8px 0 4px; font-size: 22px; }
+    .meta { color: #64748b; margin-bottom: 24px; }
+    .hero { background: #fff; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0; margin-bottom: 20px; }
+    .label { font-size: 13px; color: #db2777; font-weight: 700; }
+    .yen { font-size: 48px; font-weight: 800; letter-spacing: -1px; }
+    .yen span { color: #ec4899; }
+    .best { font-size: 13px; color: #64748b; margin-top: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 28px; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; }
+    .card .k { font-size: 12px; color: #64748b; }
+    .card .v { font-size: 22px; font-weight: 800; margin-top: 4px; }
+    .cta { display: flex; gap: 10px; }
+    .cta a { text-decoration: none; }
+    .btn { display: inline-block; padding: 12px 18px; border-radius: 10px; font-weight: 700; }
+    .pri { background: #ec4899; color: #fff; }
+    .sec { background: #fff; color: #7c3aed; border: 1px solid #e2e8f0; }
+    .screens { position: fixed; right: 16px; bottom: 16px; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px 12px; font-size: 12px; }
+    .screens a { color: #7c3aed; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <aside class="side">
+    <div class="logo">返信<span>打</span></div>
+    <div class="ch"># general</div>
+    <div class="ch on"># 今期の評価</div>
+    <div class="ch"># pr-review</div>
+  </aside>
+  <main class="main">
+    <div class="mock">PATTERN A · Workspace Pop</div>
+    <h1>シフト終了 · 査定結果</h1>
+    <p class="meta">中級 · 慣れてきたエンジニア · 2 分 · 送信 7 件</p>
+    <div class="hero">
+      <div class="label">ゲーム内年収</div>
+      <div class="yen">¥<span>8,760,000</span></div>
+      <div class="best">自己ベスト ¥12,480,000</div>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="k">入力速度</div><div class="v">62 WPM</div><div class="k">248 CPM</div></div>
+      <div class="card"><div class="k">正確性</div><div class="v">96.4%</div></div>
+      <div class="card"><div class="k">ミス数</div><div class="v">11</div></div>
+      <div class="card"><div class="k">最大連続入力</div><div class="v">48</div></div>
+    </div>
+    <div class="cta">
+      <a href="play.html"><span class="btn pri">同じ設定で再挑戦</span></a>
+      <a href="home.html"><span class="btn sec">ホーム</span></a>
+      <a href="stats.html"><span class="btn sec">分析</span></a>
+    </div>
+  </main>
+  <nav class="screens">A:
+    <a href="home.html">ホーム</a>
+    <a href="play.html">プレイ</a>
+    <a href="result.html">結果</a>
+    <a href="stats.html">分析</a>
+    <a href="../index.html">比較</a>
+  </nav>
+</body>
+</html>
